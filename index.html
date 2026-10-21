@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portafolio digital – Heycel Ariana Hernández Avilés</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fdf4f7;--card:#fff;--tx:#1d292b;--mu:#66767a;--ac:#c2185b;--ac2:#fde4ec;--bd:#f0d3dd;--sh:0 10px 30px rgba(194,24,91,.12);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1a1217;--card:#26191f;--tx:#f6e9ee;--mu:#b9a2ab;--ac:#f06292;--ac2:#3a2230;--bd:#42303a;--sh:0 10px 30px rgba(0,0,0,.4)}}
+:root[data-theme="dark"]{--bg:#1a1217;--card:#26191f;--tx:#f6e9ee;--mu:#b9a2ab;--ac:#f06292;--ac2:#3a2230;--bd:#42303a;--sh:0 10px 30px rgba(0,0,0,.4)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:'Poppins',system-ui,sans-serif;font-size:15px;line-height:1.6}
+h1,h2{font-family:'Playfair Display',Georgia,'Times New Roman',serif}
+main{max-width:760px;margin:0 auto;padding:12px 16px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;gap:8px;overflow-x:auto;padding:8px 0;background:var(--bg)}
+nav button{flex:0 0 auto;padding:7px 14px;border-radius:99px;background:var(--card);border:1px solid var(--bd);color:var(--ac);font:600 13px 'Poppins',system-ui,sans-serif;cursor:pointer}
+nav button.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+.hint{text-align:center;color:var(--mu);font-size:12px;margin:0 0 8px}
+.track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;position:relative;padding:4px 2px 12px}
+.panel{flex:0 0 100%;scroll-snap-align:start;overflow-y:auto;max-height:calc(100dvh - 150px)}
+.track section{margin:0}
+@media(min-width:900px){main{max-width:1200px}.panel{flex-basis:calc(50% - 8px)}}
+.cover{text-align:center;padding:36px 18px;border-radius:24px;background:linear-gradient(135deg,#c2185b,#6a1b9a);color:#fff;box-shadow:var(--sh)}
+.cover h1{font-size:1.7rem;margin:10px 0;color:#fff}
+.cover h3{color:#fff}
+.cover .tag{color:#ffd6e5}
+.av{font-size:52px;width:96px;height:96px;line-height:92px;border-radius:50%;background:rgba(255,255,255,.18);border:2px solid #fff;margin:0 auto 8px}
+.datos{background:rgba(255,255,255,.16);border-radius:16px;padding:10px 16px;margin:14px auto;max-width:440px;text-align:left}
+.datos p{margin:4px 0}
+section{background:var(--card);border:1px solid var(--bd);border-radius:24px;padding:22px;box-shadow:var(--sh)}
+h2{margin:6px 0 10px;color:var(--ac);font-size:1.45rem}
+h3{margin:18px 0 6px;font-size:1.02rem}
+.tag{display:inline-block;font:600 11px 'Poppins',system-ui,sans-serif;color:var(--ac);text-transform:uppercase;letter-spacing:.12em}
+section .tag{background:var(--ac2);padding:3px 10px;border-radius:99px}
+.refl{background:var(--ac2);border-left:4px solid var(--ac);border-radius:12px;padding:10px 14px;margin-top:16px}
+.refl h3{margin-top:0;color:var(--ac)}
+.wrap{overflow-x:auto;border-radius:12px;border:1px solid var(--bd)}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:420px}
+th,td{padding:9px 10px;border-bottom:1px solid var(--bd);text-align:left;vertical-align:top}
+th{color:var(--ac);background:var(--ac2)}
+input{padding:6px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx);font-size:15px}
+select{padding:6px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx);font-size:15px}
+input[type=number]{width:90px}
+.total{font-weight:700;color:var(--ac)}
+.kb{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;font-size:13px}
+.kb div{background:var(--bg);border:1px solid var(--bd);border-radius:12px;padding:8px}
+.kb b{color:var(--ac)}
+.kb p{margin:6px 0;padding:6px;background:var(--card);border:1px solid var(--bd);border-radius:8px}
+.bar{height:14px;border-radius:7px;background:linear-gradient(90deg,#c2185b,#6a1b9a)}
+.pitch{font-style:italic}
+ul{padding-left:20px}
+footer{text-align:center;color:var(--mu);font-size:13px;padding:12px}
+</style>
+</head>
+<body>
+<main>
+<nav>
+  <button data-t="portada">Portada</button><button data-t="m1">Módulo 1</button><button data-t="m2">Módulo 2</button><button data-t="m3">Módulo 3</button><button data-t="m4">Módulo 4</button><button data-t="cierre">Autoevaluación</button>
+</nav>
+<p class="hint">Desliza hacia el lado ➜ para ver cada módulo</p>
+<div class="track" id="track">
+
+<div class="cover panel" id="portada">
+  <div class="av" aria-label="Avatar">✂️</div>
+  <div class="tag">Evaluación final · Educación Media</div>
+  <h1>Portafolio Digital de Economía, Emprendimiento y Proyectos</h1>
+  <div class="datos">
+    <p><strong>Estudiante:</strong> <span id="d-nombre"></span></p>
+    <p><strong>Grado:</strong> <span id="d-grado"></span></p>
+    <p><strong>Sección:</strong> <span id="d-seccion"></span></p>
+    <p><strong>Institución:</strong> <span id="d-instituto"></span></p>
+  </div>
+  <p>El Salvador · 2026</p>
+  <h3>Introducción</h3>
+  <p style="text-align:left">Este portafolio reúne lo que aprendí en cuatro áreas: presupuesto y planificación, emprendimiento, gestión de proyectos y el impacto económico del Bitcoin. Mi meta es ser peluquera, por eso muchos de los ejemplos giran alrededor de ese sueño: cómo ahorrar para estudiar, cómo armar mi propio negocio y cómo organizar los pasos para lograrlo.</p>
+  <p style="text-align:left">En el Módulo 1 presento mi presupuesto de estudiante y las herramientas que uso para controlarlo. En el Módulo 2 desarrollo el plan de negocios de mi peluquería, mis estrategias de ventas y mi elevator pitch. En el Módulo 3 comparo la gestión tradicional con la ágil y la aplico en un proyecto real. En el Módulo 4 explico cómo está regulado el Bitcoin, cómo se guarda de forma segura y qué indicadores económicos influyen en él. Cada módulo termina con una reflexión sobre los valores y actitudes que puse en práctica. Al final hago una autoevaluación y una conclusión general.</p>
+</div>
+
+<!-- MÓDULO 1 -->
+<section class="panel" id="m1">
+  <div class="tag">Módulo 1</div>
+  <h2>Presupuesto y Planificación</h2>
+  <h3>Mi presupuesto mensual y semanal</h3>
+  <p>Lo que me dan al mes: <strong>US$</strong> <input type="number" min="0" value="100" id="ing"></p>
+  <div class="wrap"><table>
+    <thead><tr><th>Concepto</th><th>% del dinero</th><th>Al mes</th><th>Por semana</th></tr></thead>
+    <tbody>
+      <tr><td>Comida</td><td><input type="number" min="0" max="100" value="40" class="p"></td><td class="m">$0.00</td><td class="w">$0.00</td></tr>
+      <tr><td>Cosas escolares</td><td><input type="number" min="0" max="100" value="20" class="p"></td><td class="m">$0.00</td><td class="w">$0.00</td></tr>
+      <tr><td>Internet</td><td><input type="number" min="0" max="100" value="15" class="p"></td><td class="m">$0.00</td><td class="w">$0.00</td></tr>
+      <tr><td>Ropa</td><td><input type="number" min="0" max="100" value="10" class="p"></td><td class="m">$0.00</td><td class="w">$0.00</td></tr>
+      <tr><td>Ahorro (mi curso de peluquería)</td><td><input type="number" min="0" max="100" value="15" class="p"></td><td class="m">$0.00</td><td class="w">$0.00</td></tr>
+      <tr><td class="total">Total</td><td class="total" id="psum">100%</td><td class="total" id="tm">$0.00</td><td class="total" id="tw">$0.00</td></tr>
+    </tbody>
+  </table></div>
+  <p id="chk" class="total"></p>
+  <p>El mes se divide en 4 semanas. Si cambias el ingreso o los porcentajes, la tabla se recalcula sola.</p>
+  <h3>Herramientas financieras aplicadas a mi proyecto personal</h3>
+  <p><strong>Proyecto personal:</strong> ahorrar para pagar mi curso de peluquería y comprar mis primeras herramientas de trabajo.</p>
+  <ul>
+    <li><strong>Hoja de cálculo</strong> (Excel o Google Sheets): registro cada gasto, sumo por categoría y calculo cuánto me queda para ahorrar.</li>
+    <li><strong>App de finanzas o notas del celular:</strong> anoto los gastos del día para no olvidarlos.</li>
+    <li><strong>Regla de ahorro:</strong> separar primero la parte del ahorro y gastar el resto, no al revés.</li>
+  </ul>
+  <div class="refl">
+    <h3>Reflexión actitudinal</h3>
+    <ul>
+      <li><strong>Responsabilidad:</strong> llevar el presupuesto me obliga a responder por mi dinero: priorizo comida, útiles e internet antes que los gustos.</li>
+      <li><strong>Precaución e innovación:</strong> para reducir riesgos en mis inversiones personales no pongo dinero que necesito para lo básico, y busco ideas nuevas para generar ingresos extra, como peinar a conocidas.</li>
+      <li><strong>Meticulosidad:</strong> elegí herramientas simples que sí voy a usar todos los días y reviso mis cuentas cada semana.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- MÓDULO 2 -->
+<section class="panel" id="m2">
+  <div class="tag">Módulo 2</div>
+  <h2>Emprendimiento Intermedio</h2>
+  <h3>Plan de negocios: Peluquería de Heycel</h3>
+  <div class="wrap"><table>
+    <tbody>
+      <tr><th>Idea de negocio</th><td>Peluquería con cortes, peinados, tintes y tratamientos capilares.</td></tr>
+      <tr><th>Cliente</th><td>Mujeres, jóvenes, estudiantes y familias de mi comunidad.</td></tr>
+      <tr><th>Propuesta de valor</th><td>Buen servicio, precios accesibles y trato amable y cercano.</td></tr>
+      <tr><th>Competencia</th><td>Otras peluquerías y salones de la zona; me diferencio por el trato personalizado y las promociones para estudiantes.</td></tr>
+      <tr><th>Recursos necesarios</th><td>Tijeras, peines, secadora, plancha, capas, productos, silla y espejo.</td></tr>
+      <tr><th>Inversión inicial</th><td>Se calcula con una lista de compras de herramientas y productos (por definir con precios reales).</td></tr>
+      <tr><th>Ingresos</th><td>Pago por servicio (corte, peinado, tinte) y venta de productos capilares.</td></tr>
+      <tr><th>Equipo</th><td>Yo como peluquera al inicio; luego una ayudante.</td></tr>
+    </tbody>
+  </table></div>
+  <h3>Estrategias de marketing y ventas</h3>
+  <ul>
+    <li><strong>Redes sociales:</strong> fotos y videos de «antes y después» en Instagram, TikTok y Facebook.</li>
+    <li><strong>WhatsApp Business:</strong> catálogo de servicios, precios y agenda de citas.</li>
+    <li><strong>Promociones:</strong> descuento para estudiantes y «trae a una amiga».</li>
+    <li><strong>Recomendación boca a boca:</strong> clientas satisfechas que me recomiendan.</li>
+    <li><strong>Tarjeta de fidelidad:</strong> el sexto corte con descuento.</li>
+  </ul>
+  <h3>Elevator pitch (guion de 1 a 2 minutos)</h3>
+  <p class="pitch">«Hola, soy Heycel Hernández y quiero contarles sobre mi peluquería. ¿Cuántas veces han pagado de más por un corte o han salido sin sentirse a gusto con su peinado? En mi comunidad faltan salones con buen servicio y precios justos. Mi negocio ofrece cortes, peinados, tintes y tratamientos con atención personalizada y descuentos para estudiantes. Me estoy preparando con estudios profesionales y ya llevo un presupuesto para comprar mis herramientas. Mis ingresos vendrán de los servicios y de la venta de productos capilares, y con las redes sociales voy a mostrar mis resultados reales. Necesito una pequeña inversión inicial para equipos y productos, y a cambio ofrezco un negocio con clientela fiel y crecimiento constante. Si me apoyan, juntas y juntos haremos que cada persona que entre a mi peluquería salga sintiéndose increíble. ¡Gracias!»</p>
+  <div class="refl">
+    <h3>Reflexión actitudinal</h3>
+    <ul>
+      <li><strong>Comprensión:</strong> al armar cada etapa (idea, cliente, costos, ventas) entendí que un negocio se construye paso a paso y que cada parte depende de las otras.</li>
+      <li><strong>Autocontrol:</strong> al practicar el elevator pitch controlé los nervios, cuidé el tiempo y hablé con calma. Me falta seguir practicando para hablar con más seguridad.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- MÓDULO 3 -->
+<section class="panel" id="m3">
+  <div class="tag">Módulo 3</div>
+  <h2>Productividad y Gestión de Proyectos</h2>
+  <h3>Cuadro comparativo: tradicional (PMI) vs ágil</h3>
+  <div class="wrap"><table>
+    <thead><tr><th>Aspecto</th><th>Tradicional (PMI)</th><th>Ágil</th></tr></thead>
+    <tbody>
+      <tr><td>Planificación</td><td>Todo se planifica al inicio</td><td>Se planifica por etapas cortas</td></tr>
+      <tr><td>Cambios</td><td>Difíciles y costosos</td><td>Bienvenidos y esperados</td></tr>
+      <tr><td>Entregas</td><td>Una entrega final</td><td>Entregas pequeñas y frecuentes</td></tr>
+      <tr><td>Cliente</td><td>Participa al inicio y al final</td><td>Participa durante todo el proyecto</td></tr>
+      <tr><td>Herramientas</td><td>Diagrama de Gantt, cronograma</td><td>Kanban, sprints, tableros</td></tr>
+      <tr><td>Ideal para</td><td>Proyectos con requisitos fijos (construcción)</td><td>Proyectos con cambios (apps, emprendimientos nuevos)</td></tr>
+    </tbody>
+  </table></div>
+  <h3>Relación con la planificación financiera y el plan de negocios</h3>
+  <p>El presupuesto me dice cuánto dinero tengo y el plan de negocios me dice a dónde quiero llegar. La gestión de proyectos conecta ambos: convierte la meta en tareas con fechas y responsables. Por ejemplo, para abrir mi peluquería necesito ahorrar (Módulo 1), definir mi negocio (Módulo 2) y organizar los pasos en un cronograma (Módulo 3).</p>
+  <h3>Aplicación práctica: proyecto «Ahorrar para mi curso de peluquería»</h3>
+  <p><strong>Tablero Kanban</strong></p>
+  <div class="kb">
+    <div><b>Por hacer</b><p>Investigar precio del curso</p><p>Comprar herramientas</p></div>
+    <div><b>En proceso</b><p>Ahorrar cada semana</p><p>Practicar cortes</p></div>
+    <div><b>Hecho</b><p>Hacer mi presupuesto</p><p>Definir mi meta</p></div>
+  </div>
+  <p><strong>Cronograma (Gantt simple, 8 semanas)</strong></p>
+  <div class="wrap"><table>
+    <thead><tr><th>Tarea</th><th>Semanas</th><th style="width:45%">Duración</th></tr></thead>
+    <tbody>
+      <tr><td>Hacer presupuesto</td><td>1</td><td><div class="bar" style="width:12%"></div></td></tr>
+      <tr><td>Investigar cursos</td><td>1–2</td><td><div class="bar" style="width:25%;margin-left:0"></div></td></tr>
+      <tr><td>Ahorrar</td><td>1–8</td><td><div class="bar" style="width:100%"></div></td></tr>
+      <tr><td>Practicar cortes</td><td>3–8</td><td><div class="bar" style="width:75%;margin-left:25%"></div></td></tr>
+      <tr><td>Inscribirme y comprar herramientas</td><td>7–8</td><td><div class="bar" style="width:25%;margin-left:75%"></div></td></tr>
+    </tbody>
+  </table></div>
+  <div class="refl">
+    <h3>Reflexión actitudinal</h3>
+    <ul>
+      <li><strong>Organización:</strong> con el cronograma y el tablero vi qué sigue y no me perdí entre tantas tareas.</li>
+      <li><strong>Perseverancia:</strong> en un entorno ágil los planes cambian; si un precio sube o me falta dinero, ajusto el plan y sigo adelante.</li>
+      <li><strong>Proactividad y liderazgo ético:</strong> tomo la iniciativa sin que me lo pidan y, si lidero un equipo, lo haré con honestidad, respeto y reconociendo el trabajo de los demás.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- MÓDULO 4 -->
+<section class="panel" id="m4">
+  <div class="tag">Módulo 4</div>
+  <h2>Impacto Económico del Bitcoin</h2>
+  <h3>Marco regulatorio</h3>
+  <p><strong>En El Salvador:</strong> en septiembre de 2021 fue el primer país en darle curso legal al Bitcoin. El 29 de enero de 2025 la Asamblea Legislativa aprobó una reforma a la Ley Bitcoin: su uso pasó a ser voluntario para personas y empresas privadas y se eliminó que fuera «moneda de curso legal». La reforma se dio en el marco de un acuerdo de financiamiento con el FMI por unos US$1,400 millones.</p>
+  <p><strong>A nivel internacional:</strong> cada país decide distinto. Algunos lo prohíben o restringen, otros lo permiten con reglas para exchanges y control contra el lavado de dinero, y regiones como la Unión Europea tienen un reglamento específico para criptoactivos (MiCA). Las reglas cambian con frecuencia, por eso hay que verificar siempre la fuente oficial.</p>
+  <h3>Almacenamiento y seguridad</h3>
+  <div class="wrap"><table>
+    <thead><tr><th>Tipo</th><th>Descripción</th><th>Nivel de seguridad</th></tr></thead>
+    <tbody>
+      <tr><td>Billetera caliente (hot wallet)</td><td>App o web conectada a internet</td><td>Cómoda, pero más expuesta a ataques</td></tr>
+      <tr><td>Billetera fría (hardware)</td><td>Dispositivo físico sin conexión</td><td>Muy segura para guardar a largo plazo</td></tr>
+      <tr><td>Exchange (custodia)</td><td>Una empresa guarda tus bitcoins</td><td>Depende de la empresa; si quiebra o la hackean, hay riesgo</td></tr>
+    </tbody>
+  </table></div>
+  <p><strong>Medidas de ciberseguridad clave:</strong></p>
+  <ul>
+    <li>Guardar la frase semilla en papel, offline, y nunca compartirla.</li>
+    <li>Usar contraseñas fuertes y verificación en dos pasos.</li>
+    <li>Desconfiar de enlaces, mensajes y «ofertas» que prometen duplicar tu dinero (estafas).</li>
+    <li>Descargar billeteras solo de tiendas y sitios oficiales.</li>
+  </ul>
+  <h3>Indicadores económicos vinculados al Bitcoin</h3>
+  <ul>
+    <li><strong>Macroeconómicos:</strong> inflación, tasas de interés de la Reserva Federal, valor del dólar, crecimiento económico y deuda de los países.</li>
+    <li><strong>Microeconómicos:</strong> oferta y demanda de Bitcoin, volumen de transacciones, comisiones y costo de transferir remesas.</li>
+    <li><strong>Del mercado:</strong> volatilidad del precio y capitalización de mercado.</li>
+  </ul>
+  <div class="refl">
+    <h3>Reflexión actitudinal</h3>
+    <ul>
+      <li><strong>Ética:</strong> hay que cumplir las regulaciones vigentes, declarar lo que corresponda y no participar en esquemas dudosos aunque prometan ganancias.</li>
+      <li><strong>Cautela y prudencia:</strong> el precio del Bitcoin sube y baja mucho, así que antes de operar o analizar indicadores hay que informarse, empezar con poco y nunca invertir el dinero que necesito para mis gastos básicos.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CIERRE -->
+<section class="panel" id="cierre">
+  <div class="tag">Sección 6</div>
+  <h2>Autoevaluación Final y Conclusión</h2>
+  <h3>Síntesis del aprendizaje</h3>
+  <p>Las cuatro unidades se complementan: el presupuesto me da control de mi dinero, el emprendimiento me da una meta de negocio, la gestión de proyectos me da un método para lograrla y el Bitcoin me enseñó a analizar nuevas tecnologías financieras con cuidado. En la vida diaria y en mi futuro como peluquera emprendedora, voy a usar las cuatro juntas.</p>
+  <h3>Lista de cotejo personal</h3>
+  <div class="wrap"><table>
+    <thead><tr><th>Habilidad</th><th>Mi nivel (1 a 5)</th></tr></thead>
+    <tbody>
+      <tr><td>Proactividad</td><td><select class="a"><option>1</option><option>2</option><option>3</option><option selected>4</option><option>5</option></select></td></tr>
+      <tr><td>Ética</td><td><select class="a"><option>1</option><option>2</option><option>3</option><option>4</option><option selected>5</option></select></td></tr>
+      <tr><td>Autocontrol</td><td><select class="a"><option>1</option><option>2</option><option selected>3</option><option>4</option><option>5</option></select></td></tr>
+      <tr><td>Perseverancia</td><td><select class="a"><option>1</option><option>2</option><option>3</option><option>4</option><option selected>5</option></select></td></tr>
+      <tr><td class="total">Promedio</td><td class="total" id="prom">4.0</td></tr>
+    </tbody>
+  </table></div>
+  <h3>Anexos y evidencias</h3>
+  <ul>
+    <li>Hoja de cálculo de mi presupuesto (enlace por agregar)</li>
+    <li>Presentación o video de mi elevator pitch (enlace por agregar)</li>
+    <li>Fotografías de mi tablero Kanban y de mi trabajo de peluquería (por agregar)</li>
+  </ul>
+  <p><strong>Conclusión:</strong> este portafolio me mostró que una meta se logra con planificación, constancia y valores. Me siento orgullosa de lo aprendido y lista para seguir hacia mi sueño de ser peluquera.</p>
+</section>
+
+</div>
+<footer id="pie"></footer>
+</main>
+<script>
+(function(){
+  var ing=document.getElementById('ing'),p=document.querySelectorAll('.p'),m=document.querySelectorAll('.m'),w=document.querySelectorAll('.w');
+  function f(n){return '$'+n.toFixed(2)}
+  function s(){var I=parseFloat(ing.value)||0,sp=0,tm=0;
+    p.forEach(function(x,k){var q=parseFloat(x.value)||0;sp+=q;var mo=I*q/100;tm+=mo;m[k].textContent=f(mo);w[k].textContent=f(mo/4)});
+    document.getElementById('psum').textContent=sp+'%';document.getElementById('tm').textContent=f(tm);document.getElementById('tw').textContent=f(tm/4);
+    document.getElementById('chk').textContent=sp===100?'':'Los porcentajes deben sumar 100% (ahora suman '+sp+'%).'}
+  p.forEach(function(x){x.addEventListener('input',s)});ing.addEventListener('input',s);s();
+  var a=document.querySelectorAll('.a'),pr=document.getElementById('prom');
+  function mm(){var n=0;a.forEach(function(x){n+=parseFloat(x.value)});pr.textContent=(n/a.length).toFixed(1)}
+  a.forEach(function(x){x.addEventListener('change',mm)});mm();
+})();
+</script>
+<script>
+// ✏️ EDITA AQUÍ TUS DATOS PERSONALES (cambia solo lo que está entre comillas)
+var DATOS={
+  nombre:"Heycel Ariana Hernández Avilés",
+  grado:"ESCRIBE TU GRADO",
+  seccion:"ESCRIBE TU SECCIÓN",
+  instituto:"Instituto Nacional de ESCRIBE EL NOMBRE"
+};
+document.getElementById('d-nombre').textContent=DATOS.nombre;
+document.getElementById('d-grado').textContent=DATOS.grado;
+document.getElementById('d-seccion').textContent=DATOS.seccion;
+document.getElementById('d-instituto').textContent=DATOS.instituto;
+document.getElementById('pie').textContent='Portafolio de '+DATOS.nombre+' · '+DATOS.instituto+' · El Salvador · 2026';
+
+var tr=document.getElementById('track'),bt=document.querySelectorAll('[data-t]');
+bt.forEach(function(b){b.addEventListener('click',function(){var e=document.getElementById(b.dataset.t);tr.scrollTo({left:e.offsetLeft,behavior:'smooth'})})});
+function act(){var best=null,d=1e9;bt.forEach(function(b){var e=document.getElementById(b.dataset.t),x=Math.abs(e.offsetLeft-tr.scrollLeft);if(x<d){d=x;best=b}});bt.forEach(function(b){b.classList.toggle('on',b===best)})}
+tr.addEventListener('scroll',act);act();
+</script>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portafolio digital – Heycel Ariana Hernández Avilés</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fdf4f7;--card:#fff;--tx:#2b1d24;--mu:#7a6670;--ac:#c2185b;--ac2:#fde4ec;--bd:#f0d3dd;--sh:0 10px 30px rgba(194,24,91,.12);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1a1217;--card:#26191f;--tx:#f6e9ee;--mu:#b9a2ab;--ac:#f06292;--ac2:#3a2230;--bd:#42303a;--sh:0 10px 30px rgba(0,0,0,.4)}}
+:root[data-theme="dark"]{--bg:#1a1217;--card:#26191f;--tx:#f6e9ee;--mu:#b9a2ab;--ac:#f06292;--ac2:#3a2230;--bd:#42303a;--sh:0 10px 30px rgba(0,0,0,.4)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:'Poppins',system-ui,sans-serif;font-size:15px;line-height:1.6}
+h1,h2{font-family:'Playfair Display',Georgia,'Times New Roman',serif}
+main{max-width:760px;margin:0 auto;padding:12px 16px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;gap:8px;overflow-x:auto;padding:8px 0;background:var(--bg)}
+nav button{flex:0 0 auto;padding:7px 14px;border-radius:99px;background:var(--card);border:1px solid var(--bd);color:var(--ac);font:600 13px 'Poppins',system-ui,sans-serif;cursor:pointer}
+nav button.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+.hint{text-align:center;color:var(--mu);font-size:12px;margin:0 0 8px}
+.track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;position:relative;padding:4px 2px 12px}
+.panel{flex:0 0 100%;scroll-snap-align:start;overflow-y:auto;max-height:calc(100dvh - 150px)}
+.track section{margin:0}
+@media(min-width:900px){main{max-width:1200px}.panel{flex-basis:calc(50% - 8px)}}
+.cover{text-align:center;padding:36px 18px;border-radius:24px;background:linear-gradient(135deg,#c2185b,#6a1b9a);color:#fff;box-shadow:var(--sh)}
+.cover h1{font-size:1.7rem;margin:10px 0;color:#fff}
+.cover h3{color:#fff}
+.cover .tag{color:#ffd6e5}
+.av{font-size:52px;width:96px;height:96px;line-height:92px;border-radius:50%;background:rgba(255,255,255,.18);border:2px solid #fff;margin:0 auto 8px}
+.datos{background:rgba(255,255,255,.16);border-radius:16px;padding:10px 16px;margin:14px auto;max-width:440px;text-align:left}
+.datos p{margin:4px 0}
+section{background:var(--card);border:1px solid var(--bd);border-radius:24px;padding:22px;box-shadow:var(--sh)}
+h2{margin:6px 0 10px;color:var(--ac);font-size:1.45rem}
+h3{margin:18px 0 6px;font-size:1.02rem}
+.tag{display:inline-block;font:600 11px 'Poppins',system-ui,sans-serif;color:var(--ac);text-transform:uppercase;letter-spacing:.12em}
+section .tag{background:var(--ac2);padding:3px 10px;border-radius:99px}
+.refl{background:var(--ac2);border-left:4px solid var(--ac);border-radius:12px;padding:10px 14px;margin-top:16px}
+.refl h3{margin-top:0;color:var(--ac)}
+.wrap{overflow-x:auto;border-radius:12px;border:1px solid var(--bd)}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:420px}
+th,td{padding:9px 10px;border-bottom:1px solid var(--bd);text-align:left;vertical-align:top}
+th{color:var(--ac);background:var(--ac2)}
+input{padding:6px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx);font-size:15px}
+select{padding:6px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx);font-size:15px}
+input[type=number]{width:90px}
+.total{font-weight:700;color:var(--ac)}
+.kb{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;font-size:13px}
+.kb div{background:var(--bg);border:1px solid var(--bd);border-radius:12px;padding:8px}
+.kb b{color:var(--ac)}
+.kb p{margin:6px 0;padding:6px;background:var(--card);border:1px solid var(--bd);border-radius:8px}
+.bar{height:14px;border-radius:7px;background:linear-gradient(90deg,#c2185b,#6a1b9a)}
+.pitch{font-style:italic}
+ul{padding-left:20px}
+footer{text-align:center;color:var(--mu);font-size:13px;padding:12px}
+</style>
+</head>
+<body>
+<main>
+<nav>
+  <button data-t="portada">Portada</button><button data-t="m1">Módulo 1</button><button data-t="m2">Módulo 2</button><button data-t="m3">Módulo 3</button><button data-t="m4">Módulo 4</button><button data-t="cierre">Autoevaluación</button>
+</nav>
+<p class="hint">Desliza hacia el lado ➜ para ver cada módulo</p>
+<div class="track" id="track">
+
+<div class="cover panel" id="portada">
+  <div class="av" aria-label="Avatar">✂️</div>
+  <div class="tag">Evaluación final · Educación Media</div>
+  <h1>Portafolio Digital de Economía, Emprendimiento y Proyectos</h1>
+  <div class="datos">
+    <p><strong>Estudiante:</strong> <span id="d-nombre"></span></p>
+    <p><strong>Grado:</strong> <span id="d-grado"></span></p>
+    <p><strong>Sección:</strong> <span id="d-seccion"></span></p>
+    <p><strong>Institución:</strong> <span id="d-instituto"></span></p>
+  </div>
+  <p>El Salvador · 2026</p>
+  <h3>Introducción</h3>
+  <p style="text-align:left">Este portafolio reúne lo que aprendí en cuatro áreas: presupuesto y planificación, emprendimiento, gestión de proyectos y el impacto económico del Bitcoin. Mi meta es ser peluquera, por eso muchos de los ejemplos giran alrededor de ese sueño: cómo ahorrar para estudiar, cómo armar mi propio negocio y cómo organizar los pasos para lograrlo.</p>
+  <p style="text-align:left">En el Módulo 1 presento mi presupuesto de estudiante y las herramientas que uso para controlarlo. En el Módulo 2 desarrollo el plan de negocios de mi peluquería, mis estrategias de ventas y mi elevator pitch. En el Módulo 3 comparo la gestión tradicional con la ágil y la aplico en un proyecto real. En el Módulo 4 explico cómo está regulado el Bitcoin, cómo se guarda de forma segura y qué indicadores económicos influyen en él. Cada módulo termina con una reflexión sobre los valores y actitudes que puse en práctica. Al final hago una autoevaluación y una conclusión general.</p>
+</div>
+
+<!-- MÓDULO 1 -->
+<section class="panel" id="m1">
+  <div class="tag">Módulo 1</div>
+  <h2>Presupuesto y Planificación</h2>
+  <h3>Mi presupuesto mensual y semanal</h3>
+  <p>Lo que me dan al mes: <strong>US$</strong> <input type="number" min="0" value="100" id="ing"></p>
+  <div class="wrap"><table>
+    <thead><tr><th>Concepto</th><th>% del dinero</th><th>Al mes</th><th>Por semana</th></tr></thead>
+    <tbody>
+      <tr><td>Comida</td><td><input type="number" min="0" max="100" value="40" class="p"></td><td class="m">$0.00</td><td class="w">$0.00</td></tr>
+      <tr><td>Cosas escolares</td><td><input type="number" min="0" max="100" value="20" class="p"></td><td class="m">$0.00</td><td class="w">$0.00</td></tr>
+      <tr><td>Internet</td><td><input type="number" min="0" max="100" value="15" class="p"></td><td class="m">$0.00</td><td class="w">$0.00</td></tr>
+      <tr><td>Ropa</td><td><input type="number" min="0" max="100" value="10" class="p"></td><td class="m">$0.00</td><td class="w">$0.00</td></tr>
+      <tr><td>Ahorro (mi curso de peluquería)</td><td><input type="number" min="0" max="100" value="15" class="p"></td><td class="m">$0.00</td><td class="w">$0.00</td></tr>
+      <tr><td class="total">Total</td><td class="total" id="psum">100%</td><td class="total" id="tm">$0.00</td><td class="total" id="tw">$0.00</td></tr>
+    </tbody>
+  </table></div>
+  <p id="chk" class="total"></p>
+  <p>El mes se divide en 4 semanas. Si cambias el ingreso o los porcentajes, la tabla se recalcula sola.</p>
+  <h3>Herramientas financieras aplicadas a mi proyecto personal</h3>
+  <p><strong>Proyecto personal:</strong> ahorrar para pagar mi curso de peluquería y comprar mis primeras herramientas de trabajo.</p>
+  <ul>
+    <li><strong>Hoja de cálculo</strong> (Excel o Google Sheets): registro cada gasto, sumo por categoría y calculo cuánto me queda para ahorrar.</li>
+    <li><strong>App de finanzas o notas del celular:</strong> anoto los gastos del día para no olvidarlos.</li>
+    <li><strong>Regla de ahorro:</strong> separar primero la parte del ahorro y gastar el resto, no al revés.</li>
+  </ul>
+  <div class="refl">
+    <h3>Reflexión actitudinal</h3>
+    <ul>
+      <li><strong>Responsabilidad:</strong> llevar el presupuesto me obliga a responder por mi dinero: priorizo comida, útiles e internet antes que los gustos.</li>
+      <li><strong>Precaución e innovación:</strong> para reducir riesgos en mis inversiones personales no pongo dinero que necesito para lo básico, y busco ideas nuevas para generar ingresos extra, como peinar a conocidas.</li>
+      <li><strong>Meticulosidad:</strong> elegí herramientas simples que sí voy a usar todos los días y reviso mis cuentas cada semana.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- MÓDULO 2 -->
+<section class="panel" id="m2">
+  <div class="tag">Módulo 2</div>
+  <h2>Emprendimiento Intermedio</h2>
+  <h3>Plan de negocios: Peluquería de Heycel</h3>
+  <div class="wrap"><table>
+    <tbody>
+      <tr><th>Idea de negocio</th><td>Peluquería con cortes, peinados, tintes y tratamientos capilares.</td></tr>
+      <tr><th>Cliente</th><td>Mujeres, jóvenes, estudiantes y familias de mi comunidad.</td></tr>
+      <tr><th>Propuesta de valor</th><td>Buen servicio, precios accesibles y trato amable y cercano.</td></tr>
+      <tr><th>Competencia</th><td>Otras peluquerías y salones de la zona; me diferencio por el trato personalizado y las promociones para estudiantes.</td></tr>
+      <tr><th>Recursos necesarios</th><td>Tijeras, peines, secadora, plancha, capas, productos, silla y espejo.</td></tr>
+      <tr><th>Inversión inicial</th><td>Se calcula con una lista de compras de herramientas y productos (por definir con precios reales).</td></tr>
+      <tr><th>Ingresos</th><td>Pago por servicio (corte, peinado, tinte) y venta de productos capilares.</td></tr>
+      <tr><th>Equipo</th><td>Yo como peluquera al inicio; luego una ayudante.</td></tr>
+    </tbody>
+  </table></div>
+  <h3>Estrategias de marketing y ventas</h3>
+  <ul>
+    <li><strong>Redes sociales:</strong> fotos y videos de «antes y después» en Instagram, TikTok y Facebook.</li>
+    <li><strong>WhatsApp Business:</strong> catálogo de servicios, precios y agenda de citas.</li>
+    <li><strong>Promociones:</strong> descuento para estudiantes y «trae a una amiga».</li>
+    <li><strong>Recomendación boca a boca:</strong> clientas satisfechas que me recomiendan.</li>
+    <li><strong>Tarjeta de fidelidad:</strong> el sexto corte con descuento.</li>
+  </ul>
+  <h3>Elevator pitch (guion de 1 a 2 minutos)</h3>
+  <p class="pitch">«Hola, soy Heycel Hernández y quiero contarles sobre mi peluquería. ¿Cuántas veces han pagado de más por un corte o han salido sin sentirse a gusto con su peinado? En mi comunidad faltan salones con buen servicio y precios justos. Mi negocio ofrece cortes, peinados, tintes y tratamientos con atención personalizada y descuentos para estudiantes. Me estoy preparando con estudios profesionales y ya llevo un presupuesto para comprar mis herramientas. Mis ingresos vendrán de los servicios y de la venta de productos capilares, y con las redes sociales voy a mostrar mis resultados reales. Necesito una pequeña inversión inicial para equipos y productos, y a cambio ofrezco un negocio con clientela fiel y crecimiento constante. Si me apoyan, juntas y juntos haremos que cada persona que entre a mi peluquería salga sintiéndose increíble. ¡Gracias!»</p>
+  <div class="refl">
+    <h3>Reflexión actitudinal</h3>
+    <ul>
+      <li><strong>Comprensión:</strong> al armar cada etapa (idea, cliente, costos, ventas) entendí que un negocio se construye paso a paso y que cada parte depende de las otras.</li>
+      <li><strong>Autocontrol:</strong> al practicar el elevator pitch controlé los nervios, cuidé el tiempo y hablé con calma. Me falta seguir practicando para hablar con más seguridad.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- MÓDULO 3 -->
+<section class="panel" id="m3">
+  <div class="tag">Módulo 3</div>
+  <h2>Productividad y Gestión de Proyectos</h2>
+  <h3>Cuadro comparativo: tradicional (PMI) vs ágil</h3>
+  <div class="wrap"><table>
+    <thead><tr><th>Aspecto</th><th>Tradicional (PMI)</th><th>Ágil</th></tr></thead>
+    <tbody>
+      <tr><td>Planificación</td><td>Todo se planifica al inicio</td><td>Se planifica por etapas cortas</td></tr>
+      <tr><td>Cambios</td><td>Difíciles y costosos</td><td>Bienvenidos y esperados</td></tr>
+      <tr><td>Entregas</td><td>Una entrega final</td><td>Entregas pequeñas y frecuentes</td></tr>
+      <tr><td>Cliente</td><td>Participa al inicio y al final</td><td>Participa durante todo el proyecto</td></tr>
+      <tr><td>Herramientas</td><td>Diagrama de Gantt, cronograma</td><td>Kanban, sprints, tableros</td></tr>
+      <tr><td>Ideal para</td><td>Proyectos con requisitos fijos (construcción)</td><td>Proyectos con cambios (apps, emprendimientos nuevos)</td></tr>
+    </tbody>
+  </table></div>
+  <h3>Relación con la planificación financiera y el plan de negocios</h3>
+  <p>El presupuesto me dice cuánto dinero tengo y el plan de negocios me dice a dónde quiero llegar. La gestión de proyectos conecta ambos: convierte la meta en tareas con fechas y responsables. Por ejemplo, para abrir mi peluquería necesito ahorrar (Módulo 1), definir mi negocio (Módulo 2) y organizar los pasos en un cronograma (Módulo 3).</p>
+  <h3>Aplicación práctica: proyecto «Ahorrar para mi curso de peluquería»</h3>
+  <p><strong>Tablero Kanban</strong></p>
+  <div class="kb">
+    <div><b>Por hacer</b><p>Investigar precio del curso</p><p>Comprar herramientas</p></div>
+    <div><b>En proceso</b><p>Ahorrar cada semana</p><p>Practicar cortes</p></div>
+    <div><b>Hecho</b><p>Hacer mi presupuesto</p><p>Definir mi meta</p></div>
+  </div>
+  <p><strong>Cronograma (Gantt simple, 8 semanas)</strong></p>
+  <div class="wrap"><table>
+    <thead><tr><th>Tarea</th><th>Semanas</th><th style="width:45%">Duración</th></tr></thead>
+    <tbody>
+      <tr><td>Hacer presupuesto</td><td>1</td><td><div class="bar" style="width:12%"></div></td></tr>
+      <tr><td>Investigar cursos</td><td>1–2</td><td><div class="bar" style="width:25%;margin-left:0"></div></td></tr>
+      <tr><td>Ahorrar</td><td>1–8</td><td><div class="bar" style="width:100%"></div></td></tr>
+      <tr><td>Practicar cortes</td><td>3–8</td><td><div class="bar" style="width:75%;margin-left:25%"></div></td></tr>
+      <tr><td>Inscribirme y comprar herramientas</td><td>7–8</td><td><div class="bar" style="width:25%;margin-left:75%"></div></td></tr>
+    </tbody>
+  </table></div>
+  <div class="refl">
+    <h3>Reflexión actitudinal</h3>
+    <ul>
+      <li><strong>Organización:</strong> con el cronograma y el tablero vi qué sigue y no me perdí entre tantas tareas.</li>
+      <li><strong>Perseverancia:</strong> en un entorno ágil los planes cambian; si un precio sube o me falta dinero, ajusto el plan y sigo adelante.</li>
+      <li><strong>Proactividad y liderazgo ético:</strong> tomo la iniciativa sin que me lo pidan y, si lidero un equipo, lo haré con honestidad, respeto y reconociendo el trabajo de los demás.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- MÓDULO 4 -->
+<section class="panel" id="m4">
+  <div class="tag">Módulo 4</div>
+  <h2>Impacto Económico del Bitcoin</h2>
+  <h3>Marco regulatorio</h3>
+  <p><strong>En El Salvador:</strong> en septiembre de 2021 fue el primer país en darle curso legal al Bitcoin. El 29 de enero de 2025 la Asamblea Legislativa aprobó una reforma a la Ley Bitcoin: su uso pasó a ser voluntario para personas y empresas privadas y se eliminó que fuera «moneda de curso legal». La reforma se dio en el marco de un acuerdo de financiamiento con el FMI por unos US$1,400 millones.</p>
+  <p><strong>A nivel internacional:</strong> cada país decide distinto. Algunos lo prohíben o restringen, otros lo permiten con reglas para exchanges y control contra el lavado de dinero, y regiones como la Unión Europea tienen un reglamento específico para criptoactivos (MiCA). Las reglas cambian con frecuencia, por eso hay que verificar siempre la fuente oficial.</p>
+  <h3>Almacenamiento y seguridad</h3>
+  <div class="wrap"><table>
+    <thead><tr><th>Tipo</th><th>Descripción</th><th>Nivel de seguridad</th></tr></thead>
+    <tbody>
+      <tr><td>Billetera caliente (hot wallet)</td><td>App o web conectada a internet</td><td>Cómoda, pero más expuesta a ataques</td></tr>
+      <tr><td>Billetera fría (hardware)</td><td>Dispositivo físico sin conexión</td><td>Muy segura para guardar a largo plazo</td></tr>
+      <tr><td>Exchange (custodia)</td><td>Una empresa guarda tus bitcoins</td><td>Depende de la empresa; si quiebra o la hackean, hay riesgo</td></tr>
+    </tbody>
+  </table></div>
+  <p><strong>Medidas de ciberseguridad clave:</strong></p>
+  <ul>
+    <li>Guardar la frase semilla en papel, offline, y nunca compartirla.</li>
+    <li>Usar contraseñas fuertes y verificación en dos pasos.</li>
+    <li>Desconfiar de enlaces, mensajes y «ofertas» que prometen duplicar tu dinero (estafas).</li>
+    <li>Descargar billeteras solo de tiendas y sitios oficiales.</li>
+  </ul>
+  <h3>Indicadores económicos vinculados al Bitcoin</h3>
+  <ul>
+    <li><strong>Macroeconómicos:</strong> inflación, tasas de interés de la Reserva Federal, valor del dólar, crecimiento económico y deuda de los países.</li>
+    <li><strong>Microeconómicos:</strong> oferta y demanda de Bitcoin, volumen de transacciones, comisiones y costo de transferir remesas.</li>
+    <li><strong>Del mercado:</strong> volatilidad del precio y capitalización de mercado.</li>
+  </ul>
+  <div class="refl">
+    <h3>Reflexión actitudinal</h3>
+    <ul>
+      <li><strong>Ética:</strong> hay que cumplir las regulaciones vigentes, declarar lo que corresponda y no participar en esquemas dudosos aunque prometan ganancias.</li>
+      <li><strong>Cautela y prudencia:</strong> el precio del Bitcoin sube y baja mucho, así que antes de operar o analizar indicadores hay que informarse, empezar con poco y nunca invertir el dinero que necesito para mis gastos básicos.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CIERRE -->
+<section class="panel" id="cierre">
+  <div class="tag">Sección 6</div>
+  <h2>Autoevaluación Final y Conclusión</h2>
+  <h3>Síntesis del aprendizaje</h3>
+  <p>Las cuatro unidades se complementan: el presupuesto me da control de mi dinero, el emprendimiento me da una meta de negocio, la gestión de proyectos me da un método para lograrla y el Bitcoin me enseñó a analizar nuevas tecnologías financieras con cuidado. En la vida diaria y en mi futuro como peluquera emprendedora, voy a usar las cuatro juntas.</p>
+  <h3>Lista de cotejo personal</h3>
+  <div class="wrap"><table>
+    <thead><tr><th>Habilidad</th><th>Mi nivel (1 a 5)</th></tr></thead>
+    <tbody>
+      <tr><td>Proactividad</td><td><select class="a"><option>1</option><option>2</option><option>3</option><option selected>4</option><option>5</option></select></td></tr>
+      <tr><td>Ética</td><td><select class="a"><option>1</option><option>2</option><option>3</option><option>4</option><option selected>5</option></select></td></tr>
+      <tr><td>Autocontrol</td><td><select class="a"><option>1</option><option>2</option><option selected>3</option><option>4</option><option>5</option></select></td></tr>
+      <tr><td>Perseverancia</td><td><select class="a"><option>1</option><option>2</option><option>3</option><option>4</option><option selected>5</option></select></td></tr>
+      <tr><td class="total">Promedio</td><td class="total" id="prom">4.0</td></tr>
+    </tbody>
+  </table></div>
+  <h3>Anexos y evidencias</h3>
+  <ul>
+    <li>Hoja de cálculo de mi presupuesto (enlace por agregar)</li>
+    <li>Presentación o video de mi elevator pitch (enlace por agregar)</li>
+    <li>Fotografías de mi tablero Kanban y de mi trabajo de peluquería (por agregar)</li>
+  </ul>
+  <p><strong>Conclusión:</strong> este portafolio me mostró que una meta se logra con planificación, constancia y valores. Me siento orgullosa de lo aprendido y lista para seguir hacia mi sueño de ser peluquera.</p>
+</section>
+
+</div>
+<footer id="pie"></footer>
+</main>
+<script>
+(function(){
+  var ing=document.getElementById('ing'),p=document.querySelectorAll('.p'),m=document.querySelectorAll('.m'),w=document.querySelectorAll('.w');
+  function f(n){return '$'+n.toFixed(2)}
+  function s(){var I=parseFloat(ing.value)||0,sp=0,tm=0;
+    p.forEach(function(x,k){var q=parseFloat(x.value)||0;sp+=q;var mo=I*q/100;tm+=mo;m[k].textContent=f(mo);w[k].textContent=f(mo/4)});
+    document.getElementById('psum').textContent=sp+'%';document.getElementById('tm').textContent=f(tm);document.getElementById('tw').textContent=f(tm/4);
+    document.getElementById('chk').textContent=sp===100?'':'Los porcentajes deben sumar 100% (ahora suman '+sp+'%).'}
+  p.forEach(function(x){x.addEventListener('input',s)});ing.addEventListener('input',s);s();
+  var a=document.querySelectorAll('.a'),pr=document.getElementById('prom');
+  function mm(){var n=0;a.forEach(function(x){n+=parseFloat(x.value)});pr.textContent=(n/a.length).toFixed(1)}
+  a.forEach(function(x){x.addEventListener('change',mm)});mm();
+})();
+</script>
+<script>
+// ✏️ EDITA AQUÍ TUS DATOS PERSONALES (cambia solo lo que está entre comillas)
+var DATOS={
+  nombre:"Heycel Ariana Hernández Avilés",
+  grado:"ESCRIBE TU GRADO",
+  seccion:"ESCRIBE TU SECCIÓN",
+  instituto:"Instituto Nacional de ESCRIBE EL NOMBRE"
+};
+document.getElementById('d-nombre').textContent=DATOS.nombre;
+document.getElementById('d-grado').textContent=DATOS.grado;
+document.getElementById('d-seccion').textContent=DATOS.seccion;
+document.getElementById('d-instituto').textContent=DATOS.instituto;
+document.getElementById('pie').textContent='Portafolio de '+DATOS.nombre+' · '+DATOS.instituto+' · El Salvador · 2026';
+
+var tr=document.getElementById('track'),bt=document.querySelectorAll('[data-t]');
+bt.forEach(function(b){b.addEventListener('click',function(){var e=document.getElementById(b.dataset.t);tr.scrollTo({left:e.offsetLeft,behavior:'smooth'})})});
+function act(){var best=null,d=1e9;bt.forEach(function(b){var e=document.getElementById(b.dataset.t),x=Math.abs(e.offsetLeft-tr.scrollLeft);if(x<d){d=x;best=b}});bt.forEach(function(b){b.classList.toggle('on',b===best)})}
+tr.addEventListener('scroll',act);act();
+</script>
+</body>
+</html>
